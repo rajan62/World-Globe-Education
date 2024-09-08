@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>MBBS Admission in Nepal | MBBS in Abroad </title>
+	<meta name="description" content="Wide Globe Education is India's Leading MBBS Admission Consultant and Guide for Nepal, Russia and Abroad Medical Admission ">
+    <meta name="keywords" content="Best Admission Consultant in India, Best Admission Consultant in Jharkhand, Best Admission Consultant in Ranchi, MBBS in Nepal, MBBS admission in Russia, Admission in MBBS, MD MS Admission Consultant, NEET Admission, MBBS 2023 Admission ">
+
+
+<?php include 'final_header_menu.php';?>
+      <style> 
+        #loader {
+    display: none;
+    width: 105px;
+    height: 20px;
+    padding: 5px 0 10px 0;
+    background: url(mail/loading.gif) no-repeat center center;
+}
+    </style>
+     <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script>
+    
+
+       $(document).ready(function() {
+    $("#submit").click(function() {
+        var course = $("#course").val();
+        var email = $("#email").val();
+        var name = $("#name").val();
+        var phone = $("#phone").val();
+        var button = $("#submit").val();
+        var dataString = '&email=' + email + '&course=' + course + '&name=' + name + '&phone=' + phone + '&button=' + button;
+        //alert();
+        //validation 
+        if (name == '' || email == '' || course == ''  || phone == '') { //if you are use other form validation scripts remove the if statement 
+            //alert("Please fill all fields");
+			$("#getAlertName").append("Please fill all fields");
+        }
+        // AJAX Code To Submit Form.
+        else {
+            $('#loader').show();
+            $.ajax({
+                type: "POST",
+                url: "send-mailer2.php",
+                data: dataString,
+                cache: false,
+                success: function(result) {
+                    $('#loader').hide();
+                    $('#response').html(result).fadeIn();
+                    $("#contact_form")[0].reset();
+                    $('#response').fadeOut(3000).delay(400);
+
+
+                }
+            });
+        }
+        return false;
+    });
+});
+    </script>
+    
+      <!-- hero section  -->
+      <div class="tp-hero__section pt-130 theme-bg p-relative fix">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="tp-hero__content pt-50">
+                     <span class="tp-hero__subtitle text-white mb-10">Wide Globe Education</span>
+                     <h3 class="tp-hero__title text-white mb-15">Shaping Your Future.</h3>
+					 <h4 class="text-white ">Direct Admissions/NRI Quota/ Management Quota Admissions</h4>
+                     <p class="text-white mb-45">Wide Globe Education has consistently been ranked among top admission consultancy firm in India for admission in MBBS and MBBS in Nepal. Get In Touch With Us Today.</p>
+                     <div class="tp-hero__btn-wrappper d-md-flex align-items-center">
+                        <div class="hero-btn-1 mr-20 p-relative z-index-1">
+                           <a href="Services.php" class="tp-btn br-0">
+                              <span>GET IN TOUCH</span>
+                              <div class="transition"></div>
+                           </a>
+                        </div>
+                        <div class="hero-btn-2">
+                           <a href="https://www.youtube.com/watch?v=dHZb2OAx_zo"
+                              class="tp-play-btn d-flex align-items-center popup-video">
+
+                              <i class="arrow_triangle-right"></i>
+                              <span>Watch it Now</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="tp-hero__img">
+                     <img src="assets/img/hero/hero-img-1.png" alt="hero">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tp-hero__shapes">
+            <div class="tp-hero__shapes-1">
+               <img src="assets/img/icons/book-shape.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-2">
+               <img src="assets/img/icons/circle-shape.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-3">
+               <img src="assets/img/icons/dots-shapes.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-4">
+               <img src="assets/img/icons/line-shape.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-5">
+               <img src="assets/img/icons/lines-shape.png" alt="">
+            </div>
+            <div class="tp-hero__shapes-6">
+               <img src="assets/img/icons/role-shape.png" alt="">
+            </div>
+         </div>
+      </div>
+      <!-- hero section end  -->
+
+
+	
+<?php include 'college_brand.php';?>  
+	  
+	  <br>	  <br>	
+   <!-- counter start  -->
+      <div class="tp-counter__section pt-50 pb-60" data-background="assets/img/bg/counter-bg-1.jpg">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-lg-8">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="tp-section__title-wrapper mb-70 text-center">
+                        <h3 class="tp-section__title text-white">You may count us in Numbers. </h3>
+                            <h4>  we are experienced and seasoned professionals.</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-3 col-6">
+                        <div class="tp-counter__item mb-30 has-border">
+                           <span><b class="counter">5000</b>Students Consulted</span>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-6">
+                        <div class="tp-counter__item has-border mb-30">
+                           <span><b class="counter">200</b>Partner Institutes</span>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-6">
+                        <div class="tp-counter__item  has-border mb-30">
+                           <span><b class="counter">19</b>Active Years</span>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-6">
+                        <div class="tp-counter__item mb-30">
+                           <span><b class="counter">05</b>Offices in India</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- counter end  -->
+	  
+	  
+	  
+
+      <!-- service area start  -->
+      <div class="tp-feature__section pt-70 pb-10">
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="tp-section__title-wrapper text-center mb-40">
+                     <h3 class="tp-section__title">What We Do</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="row gx-70">
+               <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img style="width:120px;" src="assets/img/icons/admission.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Direct Admission – Management / NRI Quota</a></h3>
+                     <p>Our tie up with many prestigious colleges/institutes/universities in India and abroad helps you secure admission in your dream college.</p>
+                  </div>
+               </div>
+           
+        <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img  style="width:120px;"  src="assets/img/icons/Counselling.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Career Counselling</a></h3>
+                     <p>Wide Globe Education will help students choose a career based on their aptitude, skills, personality traits, and areas of interests.</p>
+                  </div>
+               </div>
+            
+               <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img style="width:120px;" src="assets/img/icons/Course.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Course Selection</a></h3>
+                     <p>Our expert counselors will help you decide and choose from a world of unlimited career opportunities, identify the courses that are expected from the current industry and markets..</p>
+                  </div>
+               </div>
+             
+			 
+			   <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img  style="width:120px;" src="assets/img/icons/University.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">College / Institute /University Selection</a></h3>
+                     <p>Our team of experts and their years of experience will help with the appropriate training and process to get an admission there</p>
+                  </div>
+               </div>
+			 
+			 
+			    <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img  style="width:120px;" src="assets/img/icons/Training.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Follow Ups</a></h3>
+                     <p>Wide Globe Education will provide parents with an up-to-date information about their child to ensure that the student does not face any difficulty during his/her stay away from home.</p>
+                  </div>
+               </div>
+			   
+			   
+			      <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img style="width:120px;" src="assets/img/icons/Admissiong.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Admission Guidance</a></h3>
+                     <p>Wide Globe Education will also keep a check and do a follow up with the chosen universities regarding the status of each applicant and will ensure a positive and a timely response.</p>
+                  </div>
+               </div>
+			   
+			   <!--
+			      <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img style="width:120px;" src="assets/img/icons/Visa_Assistance.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Visa Assistance</a></h3>
+                     <p>Our team keeps an eye on any embassy updates so that you are assured of completing the visa application process with precision</p>
+                  </div>
+               </div>
+			   
+			      <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img style="width:120px;" src="assets/img/icons/TravelAssistance.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Travel Assistance</a></h3>
+                     <p>Wide Globe Education will help you make your travel arrangements all in one place so that you do not have to run around the block.</p>
+                  </div>
+               </div>
+			   
+			   
+			      <div class="col-lg-4 col-md-4">
+                  <div class="tp-feature__item before-color-1 mb-30">
+                     <div class="tp-feature__icon">
+                        <img style="width:120px;" src="assets/img/icons/Follo-Ups.png" alt="">
+                     </div>
+                     <h3 class="tp-feature__title"><a href="Services.php">Follow Ups</a></h3>
+                     <p>Wide Globe Education will provide parents with an up-to-date information about their child to ensure that the student does not face any difficulty during his/her stay away from home.</p>
+                  </div>
+               </div>
+			 
+-->
+			 
+			 
+			 
+			 
+            </div>
+         </div>
+      </div>
+      <!-- service area end  -->
+
+      <!-- about section  start -->
+      <div class="tp-about__section pt-70 pb-30" style="background-image: linear-gradient(180deg, #0086c3, #b907e5);">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-7">
+                 
+                   
+                   <div class="sign__wrapper white-bg">
+                       <h1>Get In Touch Now</h1>
+					   <hr>
+                        <div class="sign__form">
+                           <form id="contact_form">
+                               
+                              <div class="sign__input-wrapper mb-25">
+                                 <h5>Full Name</h5>
+                                 <div class="sign__input">
+                                    
+                                    <input type="text" id="name" name="name" class="form-control"placeholder="Full name*"   required=""> 
+									 <span id="getAlertName" class="text-danger"><?php if (isset($name_error)) echo $name_error; ?></span>
+                                    <i class="fal fa-user"></i>
+                                 </div>
+                              </div>
+                              <div class="sign__input-wrapper mb-25">
+                                 <h5>Work email</h5>
+                                 <div class="sign__input">
+                                    <input type="text" id="email" name="email" class="form-control"placeholder="E-mail address*" required="">
+									 <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span>
+                                    <i class="fal fa-envelope"></i>
+                                 </div>
+                              </div>
+                              <div class="sign__input-wrapper mb-25">
+                                 <h5>Course Intrested</h5>
+                                 <div class="sign__input">
+                                    <input type="text" id="course" name="course" class="form-control"placeholder="Course interested*" required="">
+									 <span class="text-danger"><?php if (isset($course_error)) echo $course_error; ?></span>
+                                    <i class="fal fa-address-book"></i>
+                                 </div>
+                              </div>
+                              <div class="sign__input-wrapper mb-10">
+                                 <h5>Your Phone</h5>
+                                 <div class="sign__input">
+                                    <input type="text" id="phone" name="phone" class="form-control"placeholder="Mobile*" required="">
+<span class="text-danger"><?php if (isset($mobile_error)) echo $mobile_error; ?></span>		
+                                    <i class="fal fa-mobile"></i>
+                                 </div>
+                              </div>
+                            <br>
+                              <button type="submit" id="submit" name="send" value="Send" class="e-btn w-100"> <span></span> Submit</button>
+                             <div id="loader"></div>
+                <span id="response"></span>
+                           </form>
+                        </div>
+                     </div>
+             
+  </div>
+               
+               <div class="col-lg-5">
+                  <div class="tp-section__title-wrapper">
+                     <h3 class="tp-section__title" style="color:#fff;">Schedule Call</h3>
+                     <p class="mb-40" style="color:#fff;">Wide Globe Education has consistently been ranked among one of the top admission and education consultancy firm.</p>
+
+                     <div class="tp-about__feature-list mb-40">
+					 <h4 style="color:#fff;">Get Assistance In:<h4><br>
+                        <ul>
+                           <li style="color:#fff;"><span><i class="icon_check"></i></span>Direct/ NRI/ Management Quota Admission</li>
+                           <li style="color:#fff;"><span><i class="icon_check"></i></span>Career Counselling</li>
+                           <li style="color:#fff;"><span><i class="icon_check"></i></span>Course/ College Selection</li>
+						    <li style="color:#fff;"><span><i class="icon_check"></i></span>Admission Guidance</li>
+                        </ul>
+                     </div>
+                     <div class="tp-hero__btn-wrappper">
+                        <a href="#" class="tp-border-btn br-0">
+                           <span>Get Started</span>
+                           <div class="transition"></div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+      <!-- about section end  -->
+
+     
+    <?php include 'why_chooes_us.php';?>
+
+
+
+
+<!-- course start  -->
+      <div class="tp-courses__section grey-bg-2 pt-70 pb-20" style="background-image: linear-gradient(180deg, #0086c3, #b907e5);">
+         <div class="container">
+           
+			  <div class="row ">
+          
+<div class="col-md-8">
+ <!-- testimonial start  -->
+  <div class="tp-section__title-wrapper text-center ">
+                     <h3 class="tp-section__title" style="color:#fff;" >Testimonial</h3>
+                  </div>
+      <div class="tp-testimonial-2__section " style="margin-top:-20px;">
+         <div class="container">
+            <div class="row">
+               <div class="tp-testimonial-2__wrapper p-relative">
+                  <div class="tp-testimonial-2__slider">
+                     <div class="tp-testimonial-2__box white-bg">
+                        <div class="tp-testimonial-2__avata">
+                           <img src="assets/img/testimonial/tp-testi-2.1.jpg" alt="">
+                           <span class="tp-testimonial-2__ratting">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                           </span>
+                        </div>
+                        <div class="tp-testimonial-2__review">
+                           <p style="text-align:justify;">Getting admission in PG is a very tough and confusing task... I was very worried regarding my post graduation until my uncle ... <br>
+                           <span>
+                               <a href="https://www.google.com/search?q=wide+globe+education&rlz=1C1CHZN_enIN984IN984&oq=wide+globe+education&aqs=chrome.0.0i355i512j46i175i199i512j0i512j0i390i650l2j69i60l3.5504j0j7&sourceid=chrome&ie=UTF-8#lrd=0x39f4e1107c90fee7:0x49d069b36d828dfd,1,,,," target="_blank" style="color:blue;">Read more</a>
+                           </span>
+                           </p>
+                           <h3>Ashwini Pathak</h3>
+                           <span>MD/MS, 2022-23</span>
+                        </div>
+                     </div>
+                     <div class="tp-testimonial-2__box white-bg">
+                        <div class="tp-testimonial-2__avata">
+                           <img src="assets/img/testimonial/tp-testi-2.2.jpg" alt="">
+                           <span class="tp-testimonial-2__ratting">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                           </span>
+                        </div>
+                        <div class="tp-testimonial-2__review">
+                           <p>Thank you for helping my daughter admissions, i recommend people to take quality consultation for any type of educational guidance from WGE!!! </p>
+                           <h3>Jagnyeshwar Debata</h3>
+                           <span>B.Tech, 2022</span>
+                        </div>
+                     </div>
+                     <div class="tp-testimonial-2__box white-bg">
+                        <div class="tp-testimonial-2__avata">
+                           <img src="assets/img/testimonial/tp-testi-2.3.jpg" alt="">
+                           <span class="tp-testimonial-2__ratting">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                           </span>
+                        </div>
+                        <div class="tp-testimonial-2__review">
+                           <p>Thanku kaushal ji for guiding us in admission process in mbbs.. </p>
+                           <h3>Bijendra Tiwary</h3>
+                           <span>MBBS, 2022</span>
+                        </div>
+                     </div>
+                     <div class="tp-testimonial-2__box white-bg">
+                        <div class="tp-testimonial-2__avata">
+                           <img src="assets/img/testimonial/tp-testi-2.1.jpg" alt="">
+                           <span class="tp-testimonial-2__ratting">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                           </span>
+                        </div>
+                        <div class="tp-testimonial-2__review">
+                           <p>Best consultant for mbbs admission .Would like to thanks thier team for helping us in our son admission..</p>
+                           <h3>Devendra Pandey</h3>
+                           <span>MBBS</span>
+                        </div>
+                     </div>
+                     <div class="tp-testimonial-2__box white-bg">
+                        <div class="tp-testimonial-2__avata">
+                           <img src="assets/img/testimonial/tp-testi-2.3.jpg" alt="">
+                           <span class="tp-testimonial-2__ratting">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star-half-alt"></i>
+                           </span>
+                        </div>
+                        <div class="tp-testimonial-2__review">
+                           <p>Positive: Communication, Professionalism, Quality <br>
+Best consultant in jharkhand</p>
+                           <h3>Abhimanyu Singh</h3>
+                           <span>B.Tech</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="tp-testimonial-2__dots"></div>
+            </div>
+         </div>
+      </div>
+      <!-- testimoial end  -->
+
+
+
+</div>
+
+
+
+<div class="col-md-4">
+<div class="tp-section__title-wrapper text-center ">
+                     <h3 class="tp-section__title" style="color:#fff;">Latest News</h3>
+                  </div>
+<br>               
+                        
+                      <ul style="list-style: none;" style="margin-top:-100px;">
+                          <li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="https://www.facebook.com/wideglobeeducation/posts/pfbid0njRB5HteNiVJqqRP7Q18cpPxCpDWoLjceruYb9ndroxnMG8NpdYQnqmTQ8igTey9l" target="_blank">Meet our Director, Mr. Kaushal Pandey, on 19th May'2024 at Hotel Novotel, Newtown, Kolkata.</a></li><br>
+                          <li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="https://cbseresults.nic.in/" target="_blank">12th CBSE EXAM RESULT 2024 DECLARED</a></li><br>
+                          <li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="#" target="_blank">All the Best Candidates NEET-UG !</a></li><br>
+                          <li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="https://ugresults.vit.ac.in/viteee/?fbclid=IwZXh0bgNhZW0CMTEAAR1D0ocMGHPrLk2rqAx5F-IfZrVhMWS6oIuB_0GOXSDrdqb_Aw_rGS2fIk0_aem_ARoTajzy9WdCTeOQurG6lRCkH8urxGbrtUYAUjEQuMgdQHaLSkDY3wKzwm44NxpoaqMzYDCJ2pMNZBgU7LKdAbfy" target="_blank">VIT Result Out</a></li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="https://exams.nta.ac.in/NEET/" target="_blank">NEET UG Admit card - Download.</a></li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="pdf/public-notice-for-release-of-admit-cards-of-neet-ug-2024.pdf" target="_blank">Public Notice to Download Admit Card</a></li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="pdf/PKSOV-State-Medical-University.jpg" target="_blank">PKSOV State Medical University 2023-24</li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="pdf/lumbini-medical-college.jpg" target="_blank">Lumbini Medical College Fee (2024-25)</li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="pdf/Devdaha-Medical-College.jpg" target="_blank">Devdaha Medical College Fee (2024-25)</li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="pdf/Nepal-Medical-College.jpg" target="_blank">Nepal Medical College Fee (2024-25)</li><br>
+<li style="font-size:17px; color:#fff;"><i style="color:#399cb5;" class="fa fa-check-circle"></i> <a href="pdf/krist-medical-college.jpg" target="_blank">Kist Medical College Fee (2024-25)</li><br>
+
+</ul>  
+                        
+                        
+                        
+                        
+
+</div>
+</div> </div>
+         </div>
+      </div>
+      <!-- course end  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- event start-->
+      <div class="tp-event__section pt-120 pb-90 p-relative">
+         <div class="tp-event__shape">
+            <div class="event-1">
+               <img src="assets/img/icons/event-line-1.png" alt="">
+            </div>
+            <div class="event-2">
+               <img src="assets/img/icons/event-circle.png" alt="">
+            </div>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="tp-section__title-wrapper mb-40 text-center">
+                     <h3 class="tp-section__title mb-15">Blogs: Sharing Our Experience </h3>
+                     <p>You can relay on our amazing features list and also our customer services <br> will be great
+                        experience for you without doubt.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="tp-event__wrapper">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                     <div class="tp-event__item mb-30">
+                        <div class="tp-event__thumb w-img fix">
+                           <img src="assets/img/event/a.jpg" alt="">
+                        </div>
+                        <div class="tp-event__content">
+                           <div class="tp-event__meta mb-10">
+                              <span class="event-date"><i class="fa-solid fa-circle-small"></i> March 14, 2023</span>
+                              <span class="event-cat"><i class="fa-solid fa-circle-small"></i> Engineering</span>
+                           </div>
+                           <h3 class="tp-event__title mb-30">Admission in Top Engineering Colleges in India</a></h3> 
+                           <p class="mt-10">The admission procedure for these colleges involves appearing for an entrance exam...</p>
+                           <a href="https://wideglobeeducation.com/blog/index.php/2023/03/14/what-are-the-top-engineering-colleges-in-india-what-is-the-admission-procedure-for-it/" target="_blank" class="more-btn">Read More <i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="tp-event__item mb-30">
+                        <div class="tp-event__thumb w-img fix">
+                           <img src="assets/img/event/b.jpg" alt="">
+                        </div>
+                        <div class="tp-event__content">
+                           <div class="tp-event__meta mb-10">
+                              <span class="event-date"><i class="fa-solid fa-circle-small"></i> February 13, 2023</span>
+                              <span class="event-cat"><i class="fa-solid fa-circle-small"></i> Career, Law</span>
+                           </div>
+                           <h3 class="tp-event__title mb-30">Career options in Law in India- A Perspective</a></h3>
+                           <p class="mt-10">A career in law is one of the most prestigious and respected professions in India...</p>
+						 
+						   
+                           <a href="https://wideglobeeducation.com/blog/index.php/2023/03/14/all-about-career-in-law-in-india/" target="_blank" class="more-btn">Read More <i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                     <div class="tp-event__item mb-30">
+                        <div class="tp-event__thumb w-img fix">
+                           <img src="assets/img/event/cc.jpg" alt="">
+                        </div>
+                        <div class="tp-event__content">
+                           <div class="tp-event__meta mb-10">
+                              <span class="event-date"><i class="fa-solid fa-circle-small"></i> February 13, 2023</span>
+                              <span class="event-cat"><i class="fa-solid fa-circle-small"></i> Career Counselling</span>
+                           </div>
+                           <h3 class="tp-event__title mb-30">Role of Admission Counsellor in a Student Career</a></h3>
+                           <p class="mt-10">These professionals serve as guides and mentors, helping students navigate the...</p>
+                           <a href="https://wideglobeeducation.com/blog/index.php/2023/03/14/what-is-the-role-of-admission-counsellor-in-a-student-career/" taregt="_blank" class="more-btn">Read More <i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+
+                     </div>
+                  </div>
+                 
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- evant end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0&appId=764627700396954&autoLogAppEvents=1" nonce="2rY1d5MG"></script>
+
+   <!-- about section  start 
+      <div class="tp-about__section pt-70 pb-30" style="background-image: linear-gradient(180deg, #072d7b, #3c024b);">
+         <div class="container">
+            <div class="row ">
+			  <h3 class="tp-section__title mb-15"   style="text-align: center; color:#fff; ">Social Media Feed</h3>
+               <div class="col-lg-4">
+               <h4 class=""   style="text-align: center; color:#fff; ">Twitter</h4>
+						<a class="twitter-timeline" data-width="auto" data-height="450" data-theme="dark" href="https://twitter.com/WideGlobeRanchi?ref_src=twsrc%5Etfw">Tweets by WideGlobeRanchi</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                   
+                  
+             
+                  </div>
+               
+               <div class="col-lg-4">
+                <h4 class=""   style="text-align: center; color:#fff; ">Facebook</h4>
+					<div class="fb-page" data-href="https://www.facebook.com/wideglobeeducation" data-tabs="timeline" data-width="" data-height="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/wideglobeeducation" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/wideglobeeducation">Wide Globe Education</a></blockquote></div>
+			   
+               </div>
+
+
+   <div class="col-lg-4">
+                <h4 class=""   style="text-align: center; color:#fff; ">Location</h4>
+				
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3662.3462721044816!2d85.32194785703858!3d23.375687268499693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49d069b36d828dfd!2sWide+Globe+Education!5e0!3m2!1sen!2sin!4v1517911355212" width="100%" height="450" frameborder="10" style="border:0" allowfullscreen></iframe>
+
+               </div>
+
+
+
+
+            </div>
+
+         </div>
+      </div>
+      <!-- about section end  -->
+
+
+
+
+
+
+ <?php include 'footer.php';?>
